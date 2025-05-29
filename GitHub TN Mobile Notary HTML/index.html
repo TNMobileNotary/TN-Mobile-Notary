@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TN Mobile Notary | Professional Notary Services in Clarksville, TN</title>
+    <link rel="icon" href="https://i.ibb.co/2704Qy6S/notary-logo.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            dark: '#1a1a1a',
+                            light: '#f5f5f5',
+                        },
+                        accent: {
+                            gold: '#d4af37',
+                            beige: '#f5e6c8',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .testimonial-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: #d4af37;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #d4af37;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .active::after {
+            width: 100%;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            bottom: -10px;
+            left: 25%;
+            background-color: #d4af37;
+        }
+    </style>
+</head>
+<body class="bg-primary-light">
+    <!-- Navigation -->
+    <nav class="bg-primary-dark text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                   <img src="https://i.ibb.co/2704Qy6S/notary-logo.png" alt="TN Mobile Notary Logo" class="h-14 w-auto">
+                    <a href="#home" class="text-xl font-bold">TN Mobile Notary</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#areas" class="nav-link">Service Areas</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 nav-link active">Home</a>
+                <a href="#about" class="block py-2 nav-link">About</a>
+                <a href="#services" class="block py-2 nav-link">Services</a>
+                <a href="#areas" class="block py-2 nav-link">Service Areas</a>
+                <a href="#testimonials" class="block py-2 nav-link">Testimonials</a>
+                <a href="#contact" class="block py-2 nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-serif">Trusted Mobile Notary Services in Clarksville, TN</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Professional, reliable, and compassionate notary services that come to you. Serving Montgomery County with excellence since 2018.</p>
+            <a href="#contact" class="bg-accent-gold hover:bg-yellow-600 text-primary-dark font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title font-serif">About TN Mobile Notary</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://i.ibb.co/Rp0mDtXf/notary-professional.png">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 font-serif">Naté A. Johnson</h3>
+                    <p class="text-lg mb-6">Licensed & Bonded Notary Public</p>
+                    <p class="mb-4">With over 15 years of experience in the notary field, Naté A. Johnson brings professionalism, attention to detail, and genuine care to every client interaction.</p>
+                    <p class="mb-4">Specializing in real estate transactions, estate planning documents, and loan signings, Naté understands the importance of accuracy and confidentiality in notarizing your critical documents.</p>
+                    <p class="mb-6">What sets TN Mobile Notary apart is our commitment to making the notarization process as smooth and stress-free as possible. We come to you, whether it's your home, office, hospital, or even correctional facility.</p>
+                    <div class="bg-accent-beige p-4 rounded-lg border-l-4 border-accent-gold">
+                        <p class="italic">"My goal is to provide notary services with the same care and attention I would want for my own family's important documents."</p>
+                        <p class="font-bold mt-2">- Naté A. Johnson</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-primary-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title font-serif">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Real Estate Closings</h3>
+                    <p>Professional notarization for all real estate transactions including purchase agreements, refinances, and loan documents.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Wills & Trusts</h3>
+                    <p>Secure notarization for your estate planning documents to ensure they're legally binding and properly executed.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Power of Attorney</h3>
+                    <p>Discreet and professional handling of sensitive power of attorney documents for healthcare or financial matters.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Apostilles</h3>
+                    <p>Certification of documents for international use, including birth certificates, marriage licenses, and academic records.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mobile Signings</h3>
+                    <p>We come to you - home, office, hospital, or other location - for convenient document notarization.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">General Notarizations</h3>
+                    <p>All standard notary services including affidavits, acknowledgments, jurats, and copy certifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section id="areas" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title font-serif">Service Areas</h2>
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 font-serif">Serving Montgomery County & Surrounding Areas</h3>
+                    <p class="mb-6">TN Mobile Notary proudly serves the greater Clarksville area, including all of Montgomery County and nearby communities.</p>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-xl font-bold mb-2 text-accent-gold">Primary Service Areas:</h4>
+                        <ul class="list-disc pl-6 space-y-1">
+                            <li>Clarksville, TN</li>
+                            <li>Oak Grove, KY</li>
+                            <li>Fort Campbell, KY</li>
+                            <li>Dover, TN</li>
+                            <li>Springfield, TN</li>
+                            <li>Hopkinsville, KY</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-accent-beige p-4 rounded-lg">
+                        <p class="font-bold mb-2">Travel Fees:</p>
+                        <p>No travel fee within 15 miles of Clarksville. Reasonable fees apply for locations beyond this radius. Contact us for a quote.</p>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-200 p-4 rounded-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20589.104126121!2d-87.359545!3d36.5299941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864e6a6f2a1b0a9%3A0x8c6b7b9b9b9b9b9b!2sClarksville%2C%20TN!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-primary-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title font-serif">Client Testimonials</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent-gold mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"Miss Naté came over to help us notarize my father's POA and Living Will. We were all in tears and didn't know where to start. She didn't rush us, explained what each page meant, and even waited while my dad double checked a few things. It meant alot that she treated us like people, not just a job. I'll never forget her kindness."</p>
+                    <p class="font-bold">~ Angela M. – Clarksville, TN</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent-gold mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"So I needed some custody paperwork notarized for my brother who's locked up. No lie, nobody else would even pick up the phone when I said it was at the jail. But Naté did. She met me outside, was early, and knew exactly what the DOC needed. She was cool about everything. Real professional but also real chill, which helps when you're stressed out."</p>
+                    <p class="font-bold">~ Marcus L. – Dover, TN</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent-gold mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"We was tryin to get my aunt's healthcare power of attorny done and the hospital kept pushin us around. I called Nate and she came straight to the ICU. She didn't judge nothin, just got the paperwork done and made sure my aunt understood what she was signing. That kinda care is rare these days. Thank you so much Ms. Johnson!"</p>
+                    <p class="font-bold">~Denise B. – Oak Grove, KY</p>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent-gold mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"I was under pressure to complete a VA refinance loan package before the deadline. Naté arrived early, double-checked all the signatures, and even noticed a missing initials page that I had overlooked. She was patient, well-organized, and clearly experienced with loan documents. I wouldn't trust anyone else with something this important."</p>
+                    <p class="font-bold">~ James W. – Fort Campbell, KY</p>
+                </div>
+                
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent-gold mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"We had a lot of questions when setting up a family trust for my parents. Naté not only notarized the documents but also made sure my mom and dad fully understood what they were signing. She was calm, knowledgeable, and showed a level of professionalism that made the whole process smooth and reassuring. I highly recommend her for estate planning paperwork."</p>
+                    <p class="font-bold">~ Tamika H. – Nashville, TN</p>
+                </div>
+                
+                <!-- Testimonial 6 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent-gold mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"Naté helped me with a last-minute real estate transaction — we needed a mobile notary on a Sunday evening and thought it was impossible. She arrived within the hour, professionally dressed, and handled the documents like a pro. I appreciated that she didn't cut corners and still took the time to verify everything. Truly dependable."</p>
+                    <p class="font-bold">~ Jonathan S. – Springfield, TN</p>
+                </div>
+            
+            <!-- Testimonial 7 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent-gold mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"I’ve worked with TN Mobile Notary multiple times now. From notarizing a loan modification to helping my daughter get a travel consent form signed for school, Naté has always been prompt, courteous, and extremely reliable. She brings a personal touch that you don’t often get these days, and I’ve referred her to my whole neighborhood."</p>
+                    <p class="font-bold">~ Carla – Clarksville, TN</p>
+                </div>
+                
+                <!-- Testimonial 8 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent-gold mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"I needed a notarized affidavit for a legal filing and had less than 12 hours to get it done. I called Naté expecting to be told it was too short notice — instead, she met me that same evening, had everything printed and ready, and double-checked all the legal formatting before I signed. It felt more like working with a trusted legal assistant than just a notary. She really knows her stuff."</p>
+                    <p class="font-bold">~ Harold D. – Oak Grove, KY</p>
+                </div>
+                
+                <!-- Testimonial 9 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent-gold mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"I’ve used TN Mobile Notary multiple times over the past year — from notarizing Power of Attorney documents for my grandmother to travel consent forms for my kids’ international trip. Naté always shows up on time, explains everything clearly, and is incredibly helpful no matter how last-minute I call her. It’s rare to find someone this reliable AND compassionate. She’s my go-to notary now — period."</p>
+                    <p class="font-bold">~ LaTasha E. – Clarksville, TN</p>
+                </div>
+            </div>           
+            <div class="mt-12 text-center">
+                <a href="#contact" class="bg-accent-gold hover:bg-yellow-600 text-primary-dark font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Book Your Appointment Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title font-serif">Contact Us</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6 font-serif">Get in Touch</h3>
+                    
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1 font-medium">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-gold">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block mb-1 font-medium">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-gold">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block mb-1 font-medium">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-gold">
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block mb-1 font-medium">Service Needed</label>
+                            <select id="service" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-gold">
+                                <option value="">Select a service</option>
+                                <option value="real-estate">Real Estate Closings</option>
+                                <option value="wills-trusts">Wills & Trusts</option>
+                                <option value="poa">Power of Attorney</option>
+                                <option value="apostilles">Apostilles</option>
+                                <option value="mobile-signings">Mobile Signings</option>
+                                <option value="general">General Notarizations</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block mb-1 font-medium">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-gold"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-accent-gold hover:bg-yellow-600 text-primary-dark font-bold py-3 px-8 rounded-full text-lg transition duration-300 w-full">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-accent-beige p-8 rounded-lg h-full">
+                        <h3 class="text-2xl font-bold mb-6 font-serif">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-accent-gold mr-4 mt-1">
+                                    <i class="fas fa-building text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Business Name</h4>
+                                    <p>TN Mobile Notary</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-accent-gold mr-4 mt-1">
+                                    <i class="fas fa-user-tie text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Owner</h4>
+                                    <p>Naté A. Johnson</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-accent-gold mr-4 mt-1">
+                                    <i class="fas fa-globe text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Website</h4>
+                                    <p>www.TNMobileNotary.org</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-accent-gold mr-4 mt-1">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <p>services@TNMobileNotary.org</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-accent-gold mr-4 mt-1">
+                                    <i class="fas fa-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Phone</h4>
+                                    <p>(615) 270-9336</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-accent-gold mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Location</h4>
+                                    <p>Clarksville, TN – Montgomery County</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-2">Business Hours</h4>
+                            <ul class="space-y-1">
+                                <li class="flex justify-between">
+                                    <span>Monday - Friday:</span>
+                                    <span>8:00 AM - 6:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Saturday:</span>
+                                    <span>9:00 AM - 3:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Sunday:</span>
+                                    <span>Emergency appointments only</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-stamp text-accent-gold mr-2"></i>
+                        TN Mobile Notary
+                    </h3>
+                    <p class="mb-4">Professional mobile notary services serving Clarksville and surrounding areas with excellence since 2018.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-accent-gold transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-accent-gold transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-accent-gold transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-accent-gold transition duration-300">Home</a></li>
+                        <li><a href="#about" class="hover:text-accent-gold transition duration-300">About</a></li>
+                        <li><a href="#services" class="hover:text-accent-gold transition duration-300">Services</a></li>
+                        <li><a href="#areas" class="hover:text-accent-gold transition duration-300">Service Areas</a></li>
+                        <li><a href="#testimonials" class="hover:text-accent-gold transition duration-300">Testimonials</a></li>
+                        <li><a href="#contact" class="hover:text-accent-gold transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="hover:text-accent-gold transition duration-300">Real Estate Closings</a></li>
+                        <li><a href="#services" class="hover:text-accent-gold transition duration-300">Wills & Trusts</a></li>
+                        <li><a href="#services" class="hover:text-accent-gold transition duration-300">Power of Attorney</a></li>
+                        <li><a href="#services" class="hover:text-accent-gold transition duration-300">Apostilles</a></li>
+                        <li><a href="#services" class="hover:text-accent-gold transition duration-300">Mobile Signings</a></li>
+                        <li><a href="#services" class="hover:text-accent-gold transition duration-300">General Notarizations</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-accent-gold mr-2 mt-1"></i>
+                            <span>Clarksville, TN</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-accent-gold mr-2 mt-1"></i>
+                            <span>(615) 270-9336</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-accent-gold mr-2 mt-1"></i>
+                            <span>services@TNMobileNotary.org</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-6 bg-accent-beige bg-opacity-20 p-4 rounded-lg">
+                        <p class="font-bold text-accent-gold">Naté A. Johnson</p>
+                        <p class="text-sm">Licensed & Bonded Notary Public</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>Copyright © 2025 TN Mobile Notary – All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Highlight active navigation link based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Here you would typically send the form data to a server
+                alert('Thank you for your message! We will contact you shortly.');
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
