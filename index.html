@@ -686,13 +686,29 @@
         
         // Form submission
         const contactForm = document.querySelector('form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
-                // Here you would typically send the form data to a server
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
                 alert('Thank you for your message! We will contact you shortly.');
                 contactForm.reset();
+            } else {
+                alert('There was a problem sending your message.');
+            }
+        } catch (error) {
+            alert('There was a problem submitting the form.');
             });
         }
     </script>
