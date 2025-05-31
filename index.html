@@ -476,15 +476,21 @@
 
 <!-- Custom Thank You Modal -->
 <div id="thankYouModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-  <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full text-center">
-    <h2 class="text-2xl font-bold text-gold mb-2">Thank You!</h2>
-    <p class="text-lg mb-4">We will contact you shortly.</p>
-    <p class="text-lg mb-4">We appreciate the opportunity to serve you!</p>
-    <button onclick="document.getElementById('thankYouModal').classList.add('hidden')"
-      class="bg-accent-gold hover:bg-yellow-600 text-primary-dark font-bold py-2 px-6 rounded-full transition duration-300">
-      Close
-    </button>
+ <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full text-center">
+  <!-- Flex row for logo + Thank You -->
+  <div class="flex items-center justify-center mb-4 space-x-3">
+    <img src="https://i.ibb.co/2704Qy6S/notary-logo.png"
+         alt="TN Mobile Notary Logo"
+         class="w-10 h-10 object-contain" />
+    <h2 class="text-2xl font-bold text-gold">Thank You!</h2>
   </div>
+  <p class="text-lg mb-4">We will contact you shortly. We appreciate the opportunity to serve you!</p>
+  <p class="text-lg mb-4">We appreciate the opportunity to serve you!</p>
+  <button onclick="document.getElementById('thankYouModal').classList.add('hidden')"
+    class="bg-accent-gold hover:bg-yellow-600 text-primary-dark font-bold py-2 px-6 rounded-full transition duration-300">
+    Close
+  </button>
+</div>
 </div>
                 </div>
                 
