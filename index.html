@@ -478,7 +478,7 @@
     </button>
   </div>
 </div>
-                </div>
+                
                 
                 <div class="lg:w-1/2">
                     <div class="bg-accent-beige p-8 rounded-lg h-full">
@@ -702,7 +702,7 @@
 
   if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
-      
+      e.preventDefault();
 
       const formData = new FormData(contactForm);
 
