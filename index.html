@@ -701,6 +701,39 @@
             });
         });
     </script>
+     // Form submission
+<script>
+  const contactForm = document.getElementById('contactForm');
+  const thankYouModal = document.getElementById('thankYouModal');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(contactForm);
+      const formSubmitURL = "https://formsubmit.co/mrsnajohnson@gmail.com";
+
+      try {
+        const response = await fetch(formSubmitURL, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          contactForm.reset();
+          thankYouModal.classList.remove('hidden');
+        } else {
+          alert('There was a problem sending your message.');
+        }
+      } catch (error) {
+        alert('An error occurred. Please try again later.');
+      }
+    });
+  }
+</script>
 <script>
   function showThankYouPopup() {
     setTimeout(() => {
