@@ -741,6 +741,9 @@
     setTimeout(() => {
       document.getElementById('thankYouModal').classList.remove('hidden');
       document.getElementById('contactForm').reset(); // ✅ Clears all form fields
+  // ✅ Scroll smoothly to the top (or #home section)
+      const target = document.getElementById('home') || document.body;
+      target.scrollIntoView({ behavior: 'smooth' });
     }, 500); // small delay to allow form to submit
   }
 </script>
