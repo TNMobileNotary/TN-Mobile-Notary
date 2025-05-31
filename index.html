@@ -417,11 +417,9 @@
                 <div class="lg:w-1/2">
                     <h3 class="text-2xl font-bold mb-6 font-serif">Get in Touch</h3>
                     
-<form target="_blank" action="https://formsubmit.co/mrsnajohnson@gmail.com" method="POST" class="space-y-4">
-  <!-- Prevent spam -->
+<form id="contactForm" action="https://formsubmit.co/mrsnajohnson@gmail.com" method="POST" class="space-y-4">
   <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_next" value="https://tnmobilenotary.org/">
 
   <div>
     <label for="name" class="block mb-1 font-medium">Full Name</label>
@@ -462,6 +460,23 @@
       class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-gold"></textarea>
   </div>
 
+  <button type="submit"
+    class="bg-accent-gold hover:bg-yellow-600 text-primary-dark font-bold py-3 px-8 rounded-full text-lg transition duration-300 w-full">
+    Send Message
+  </button>
+</form>
+
+<!-- Thank You Modal -->
+<div id="thankYouModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div class="bg-white p-8 rounded-lg shadow-lg text-center max-w-sm w-full">
+    <h2 class="text-xl font-bold text-gold mb-4">Thank You!</h2>
+    <p class="mb-4">Your message has been received. We will contact you shortly.</p>
+    <button onclick="document.getElementById('thankYouModal').classList.add('hidden')"
+      class="bg-accent-gold hover:bg-yellow-600 text-primary-dark font-bold py-2 px-6 rounded-full transition duration-300">
+      Close
+    </button>
+  </div>
+</div>
   <button type="submit"
     class="bg-accent-gold hover:bg-yellow-600 text-primary-dark font-bold py-3 px-8 rounded-full text-lg transition duration-300 w-full">
     Send Message
@@ -685,32 +700,36 @@
         });
         
         // Form submission
-        const contactForm = document.querySelector('form');
-if (contactForm) {
+  <script>
+  const contactForm = document.getElementById('contactForm');
+  const thankYouModal = document.getElementById('thankYouModal');
+
+  if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
+      e.preventDefault();
 
-        const formData = new FormData(contactForm);
+      const formData = new FormData(contactForm);
 
-        try {
-            const response = await fetch(contactForm.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
 
-            if (response.ok) {
-                alert('Thank you for your message! We will contact you shortly.');
-                contactForm.reset();
-            } else {
-                alert('There was a problem sending your message.');
-            }
-        } catch (error) {
-            alert('There was a problem submitting the form.');
-            });
+        if (response.ok) {
+          contactForm.reset();
+          thankYouModal.classList.remove('hidden');
+        } else {
+          alert('There was a problem sending your message.');
         }
-    </script>
+      } catch (error) {
+        alert('Submission failed. Please try again.');
+      }
+    });
+  }
+</script>
 </body>
 </html>
