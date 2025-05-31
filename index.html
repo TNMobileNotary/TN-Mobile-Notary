@@ -738,7 +738,7 @@
   function showThankYouPopup() {
     setTimeout(() => {
       document.getElementById('thankYouModal').classList.remove('hidden');
-      document.getElementById('contactForm').reset();
+      document.getElementById('contactForm').reset(); // ✅ Clears all form fields
     }, 500); // small delay to allow form to submit
   }
 </script>
