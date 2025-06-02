@@ -483,9 +483,19 @@
   <label for="appointment-date" class="block mb-1 font-medium">Preferred Date</label>
   <input type="date"
        id="appointment-date"
-       name="Preferred Date" required
-       class="appearance-none w-full h-9 px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-gold text-base">
+       name="Preferred Date"
+       required
+       class="appearance-none w-full h-9 px-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-gold text-base"
+       min=""
+  >
 </div>
+
+<script>
+  // Set today's date as the minimum allowed date
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('appointment-date').setAttribute('min', today);
+</script>
+
 
 <!-- Preferred Time (optional, 30-min intervals) -->
 <div>
